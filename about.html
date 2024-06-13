@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University website tutorials</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b45544067d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="image/logo.png" alt="" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <h1>ABout Us</h1>
+    </section>
+
+    <!-- about us content -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the World's largest University</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            esse minus dolor deleniti reprehenderit exercitationem, earum iusto
+            omnis explicabo facilis cum soluta ullam tempora et praesentium
+            aperiam illo fugit eligendi, dolorem amet. Quis a tempore alias
+            accusantium at pariatur, qui animi. Explicabo dolor, illum voluptate
+            deleniti iure adipisci magni beatae.
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="image/about.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="Footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum
+        officia unde qui autem a ipsa quam rerum ex nobis cumque <br />laborum
+        repellendus commodi quidem sapiente enim sed, magnam voluptatibus.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa-solid fa-heart"></i> By MuizKhalifa</p>
+    </section>
+
+    <!-- javascript for toggle menu for mobile  -->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
